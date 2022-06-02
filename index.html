@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Santiago Toro | Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/nav-bar.css">
+  <link rel="stylesheet" href="./css/mobile.css">
+  <link rel="stylesheet" href="./css/desktop.css" media="(min-width: 768px)">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="" class="logo">
+        <img src="./assets/icons/Santiago toro.svg" alt="Logo de la página web">
+        <div>Santiago Toro</div>
+      </a>
+      <button class="btn-menu_open">
+        <img src="./assets/icons/bars-solid.svg" alt="Abrir menu">
+      </button>
+      <ul class="nav-menu">
+        <button class="btn-menu_close">
+          <img src="./assets/icons/xmark-solid.svg" alt="Cerrar menu">
+        </button>
+        <li><a href="#profile">Sobre mi</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#skills">Tecnologías</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="profile" id="profile">
+      <div class="profile_info">
+        <h1 class="profile_info-title">Sobre mi</h1>
+        <p class="profile_info-paragraph">Soy científico profesional y desarrollador web Jr. Elegí estudiar biología movido por la curiosidad, sensibilidad y empatía que me generan los seres vivos. En mi caminar académico descubrí que en el mundo existen una gran cantidad de problemas, y que existe una urgente necesidad de personas con mentes creativas dispuestas a solucionar esos problemas para generar un cambio que impacte de forma positivo en el mundo. Estoy convencido de que ese cambio, solo puede ocurrir a través del desarrollo tecnológico responsable.<br><br> Me caracterizo por ser una persona de hábitos. Me gusta disfrutar de la compañía de mi familia y amigos. Tengo un gran respeto por la alimentación consciente y me mantengo en constante actividad física.</p>
+      </div>
+      <div class="profile_img">
+        <img class="profile_img-photo" src="./assets/imgs/original-photo.jpg" alt="Fotografía del programador">
+      </div>
+    </section>
+    <section class="projects" id="projects">
+      <div class="projects_container">
+        <h2 class="porjects_container-title">Proyectos</h2>
+        <div class="projects_container-cards">
+          <div class="project">
+            <a href="https://simbionte96.github.io/math-solutions/" target="_blank">
+              <figure>
+                <img class="project_img" src="./assets/imgs/web-solutions-demo.png" alt="">
+              </figure>
+              <h3 class="project_title">Math Solutions</h3>
+              <p>Página web construida con HTML5, CSS3 y JavaScript con una temática de ejercicios geometría y estadística.</p>
+            </a>
+          </div>
+          <div class="project">
+            <a href="https://github.com/simbionte96/crud-python" target="_blank">
+              <figure>
+                <img class="project_img" src="./assets/imgs/crud-demo.png" alt="">
+              </figure>
+              <h3 class="project_title">CRUD</h3>
+              <p>Aplicación backend de tipo CLI escrita en Python con funciones como crear, leer, actializar y borrar y archivo de tipo .csv.</p>
+            </a>
+          </div>
+          <div class="project">
+            <a href="https://simbionte96.github.io/music-page/" target="_blank">
+              <figure>
+                <img class="project_img" src="./assets/imgs/music-page_demo.png" alt="">
+              </figure>
+              <h3 class="project_title">Music Page</h3>
+              <p>Creación de un frontend de un sitio web. Maquedado unicamente con CSS-grid, adaptable a cualquier dispositivo.</p>
+            </a>
+          </div>
+          <div class="project">
+            <a href="https://simbionte96.github.io/batatabit-page/" target="_blank">
+              <figure>
+                <img class="project_img" src="./assets/imgs/batata-bit_demo.png" alt="">
+              </figure>
+              <h3 class="project_title">Batatabit</h3>
+              <p>Creación de un frontend de un sitio web partiendo de su wireframe. Maquedado unicamente con CSS-flexbox, adaptable a cualquier dispositivo.</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="skills" id="skills">
+      <h2 class="skills_title">Tecnologías</h2>
+      <ul class="skill_list">
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>Git y GitHub</li>
+        <li>Linux</li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <section class="contact" id="contact">
+      <h2 class="contact_title">Contacto</h2>
+      <div class="contact_container-items">
+        <a href="https://www.linkedin.com/in/santiago-toro-casaf%C3%BAs-b658451a7/" target="_blank">
+          <figure class="contact_container-item-1">
+            <img src="./assets/icons/linkedin-icon.svg" alt="Botón con link a LinkedIn">
+          </figure>
+        </a>
+        <a href="https://torre.co/msantiagotoro?r=YdRwjWBu" target="_blank">
+          <figure class="contact_container-item-2">
+            <img src="./assets/icons/torre-icon.png" alt="Botón con acceso a Torre">
+          </figure>
+        </a>
+        <a href="https://github.com/simbionte96" target="_blank">
+          <figure class="contact_container-item-3">
+            <img src="./assets/icons/github-icon.svg" alt="Botón con acceso a GitHub">
+          </figure>
+        </a>
+      </div>
+      <div></div>
+    </section>
+  </footer>
+  <script defer src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+.profile {
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.profile_info {
+  margin: 15px 0;
+  width: 50%;
+}
+.profile_img {
+  justify-content: center;
+  max-width: 320px;
+  width: 50%;
+}
