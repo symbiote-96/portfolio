@@ -5,6 +5,7 @@ header {
   width: 100%;
   background-color: var(--primary-color);
   box-shadow: 0 5px 5px var(--hard-gray);
+  z-index: 1
 }
 
 header nav {

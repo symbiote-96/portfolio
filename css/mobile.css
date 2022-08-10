@@ -76,6 +76,27 @@ section[id] {
 }
 
 /* Projects section */
+.projects {
+  width: 100%;
+  padding: 50px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--secondary-color-1)
+}
+
+.projects_header {
+  margin: 25px;
+  display: flex;
+  justify-content: center
+}
+
+.projects_header h2 {
+  font-size: 4rem;
+  color: var(--primary-color)
+}
+
 .projects_container {
   width: 100%;
   display: flex;
@@ -90,7 +111,6 @@ section[id] {
   max-width: 400px;
   overflow: hidden;
   position: relative;
-  cursor: pointer;
   border-radius: 20px;
   margin: 15px
 }
@@ -130,6 +150,26 @@ section[id] {
 .details p {
   font-size: 1.5rem
 }
+
+.social-icons  {
+  margin-top: 15px;
+  display: flex;
+  list-style: none;
+}
+
+.social-icons li {
+  margin: 0 5px;
+  font-size: 20px;
+}
+
+.social-icons li a {
+  color: var(--primary-color)
+}
+
+.social-icons li a:hover {
+  color: var(--secondary-color-1)
+}
+
 
 .skills_title {
   display: flex;
