@@ -170,29 +170,78 @@ section[id] {
   color: var(--secondary-color-1)
 }
 
-
-.skills_title {
+/* Skills section */
+.skills {
+  width: 100%;
+  padding: 50px;
+  margin: 0 auto;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  margin: 25px;
-  font-size: 4rem;
-  color: var(--secondary-color-1);
+  background-color: var(--primary-color)
 }
 
-.skill_list {
+.skills_header {
+  margin: 25px;
+  display: flex;
+  justify-content: center
+}
+
+.skills_header h2 {
+  font-size: 4rem;
+  color: var(--secondary-color-1)
+}
+
+.skills_container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  list-style: none;
+  justify-content: space-around
 }
 
-.skill_list li {
-  margin: 10px;
+.tech-skill {
+  position: relative;
+  width: 10rem;
+  height: 10rem;
+  margin: 20px auto;
+}
+
+.tech-skill img {
+  width: 100%;
+  height: 100%;
+}
+
+.tech-skill .tooltip_text {
+  top: 110%;
+  left: 50%;
+  margin-left: -60px;
+  position: absolute;
+  width: 120px;
+  padding: 5px 0;
+  text-align: center;
   font-size: 1.5rem;
-  font-weight: 500;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
-  border-radius: 40px;
-  padding: 0.5em 0.7em;
+  z-index: 1;
+  visibility: hidden;
+  background-color: var(--hard-gray);
+  color: var(--primary-color);
+  border-radius: 6px;
+  opacity: 0;
+  transition: opacity 0.5s
+}
+
+.tech-skill .tooltip_text::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent var(--hard-gray) transparent;
+}
+
+.tech-skill:hover .tooltip_text {
+  opacity: 1;
+  visibility: visible
 }
 
 /* Footer */
